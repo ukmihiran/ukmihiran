@@ -13,7 +13,7 @@
 
 - 📝 I regularly write articles on [https://cybernetgen.com](https://cybernetgen.com)
 
-- 💬 Ask me about **Python, C, PHP,Machine Learning**
+- 💬 Ask me about **Cybersecurity, Python, C, PHP, Machine Learning**
 
 - 📫 How to reach me **ukmihiran@gmail.com**
 
