@@ -9,7 +9,7 @@
 
 - 🌱 I’m currently learning **Machine Learning**
 
-- 👨‍💻 All of my projects are available at [https://www.linkedin.com/in/udesh-bandara/](https://www.linkedin.com/in/udesh-bandara/)
+- 👨‍💻 All of my projects are available at [https://www.linkedin.com/in/udesh-bandara/](https://github.com/ukmihiran)
 
 - 📝 I regularly write articles on [https://cybernetgen.com](https://cybernetgen.com)
 
