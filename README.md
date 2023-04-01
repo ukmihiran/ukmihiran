@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Udesh Bandara</h1>
-<h3 align="center">Cybersecurity Professional adept in performing Penetration Testing, Red Teaming, remediation to prevent exploitation of vulnerabilities, and addressing all-encompassing cybersecurity challenges. Enjoying life as a Penetration Tester!</h3>
+<h4 align="center">Hello! I'm a dedicated Cyber Security Professional with 4 years of experience specializing in Penetration Testing, Red Teaming, Vulnerability Management, and Cloud Security. My core expertise lies in proactively identifying vulnerabilities and mitigating security risks through realistic attack simulations and comprehensive penetration testing. My hands-on approach to both penetration testing and red teaming enables me to devise effective strategies to uncover hidden security flaws and strengthen an organization's overall security posture. I'm passionate about staying current with the latest trends and techniques in the industry, allowing me to tackle even the most complex cyber threats. Enjoying life as a Penetration Tester!</h4>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ukmihiran&label=Profile%20views&color=0e75b6&style=flat" alt="ukmihiran" /> </p>
 
