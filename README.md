@@ -19,11 +19,11 @@
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->
+- [SQL Injection in NodeJs authentication with MySqlJs Library](https://cybernetgen.com/sql-injection-in-nodejs-authentication-with-mysqljs-library/)
 - [SSL Pinning Bypass with Frida for Beginners](https://cybernetgen.com/ssl-pinning-bypass-with-frida-for-beginners/)
 - [Apache Tomcat Server – Deserialization of Untrusted Data &lpar;RCE&rpar;](https://cybernetgen.com/apache-tomcat-server-deserialization-of-untrusted-data-rce/)
 - [Windows PrivEsc using Insecure Service Permissions](https://cybernetgen.com/windows-privesc-using-insecure-service-permissions/)
 - [Auth bypass with PHP type Juggling](https://cybernetgen.com/auth-bypass-with-php-type-juggling/)
-- [Abusing SeLoadDriverPrivilege for Privilege Escalation](https://cybernetgen.com/abusing-seloaddriverprivilege-for-privilege-escalation/)
 <!-- BLOG-POST-LIST:END -->
 
 <h3 align="left">Connect with me:</h3>
