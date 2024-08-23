@@ -19,11 +19,11 @@
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->
-- [SQL Injection in NodeJs authentication with MySqlJs Library](https://cybernetgen.com/sql-injection-in-nodejs-authentication-with-mysqljs-library/)
-- [SSL Pinning Bypass with Frida for Beginners](https://cybernetgen.com/ssl-pinning-bypass-with-frida-for-beginners/)
-- [Apache Tomcat Server – Deserialization of Untrusted Data &lpar;RCE&rpar;](https://cybernetgen.com/apache-tomcat-server-deserialization-of-untrusted-data-rce/)
-- [Windows PrivEsc using Insecure Service Permissions](https://cybernetgen.com/windows-privesc-using-insecure-service-permissions/)
-- [Auth bypass with PHP type Juggling](https://cybernetgen.com/auth-bypass-with-php-type-juggling/)
+- [Bypassing SSL Pinning in Android Applications Using Frida](https://cybernetgen.com/blog/2021-01-02/SSL-Pinning-Bypass-with-Frida-for-Beginners)
+- [Apache Tomcat Server - Deserialization of Untrusted Data RCE](https://cybernetgen.com/blog/2020-12-29/apache-tomcat-server-deserialization-of-untrusted-data-rce)
+- [Windows Service Privilege Escalation](https://cybernetgen.com/blog/2020-11-04/Windows-Service-Privilege-Escalation)
+- [Auth Bypass with PHP Type Juggling](https://cybernetgen.com/blog/2020-10-29/auth-bypass-with-php-type-juggling)
+- [Abusing SeLoadDriverPrivilege for Privilege Escalation](https://cybernetgen.com/blog/2020-10-19/Abusing-SeLoadDriverPrivilege-for-Privilege-Escalation)
 <!-- BLOG-POST-LIST:END -->
 
 <h3 align="left">Connect with me:</h3>
