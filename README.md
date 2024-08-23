@@ -19,11 +19,11 @@
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->
-- [Bypassing SSL Pinning in Android Applications Using Frida](https://cybernetgen.com/blog/2021-01-02/SSL-Pinning-Bypass-with-Frida-for-Beginners)
-- [Apache Tomcat Server - Deserialization of Untrusted Data RCE](https://cybernetgen.com/blog/2020-12-29/apache-tomcat-server-deserialization-of-untrusted-data-rce)
-- [Windows Service Privilege Escalation](https://cybernetgen.com/blog/2020-11-04/Windows-Service-Privilege-Escalation)
-- [Auth Bypass with PHP Type Juggling](https://cybernetgen.com/blog/2020-10-29/auth-bypass-with-php-type-juggling)
-- [Abusing SeLoadDriverPrivilege for Privilege Escalation](https://cybernetgen.com/blog/2020-10-19/Abusing-SeLoadDriverPrivilege-for-Privilege-Escalation)
+- [Bypassing SSL Pinning in Android Applications Using Frida](https://cybernetgen.com/blog/SSL-Pinning-Bypass-with-Frida-for-Beginners)
+- [Apache Tomcat Server - Deserialization of Untrusted Data RCE](https://cybernetgen.com/blog/apache-tomcat-server-deserialization-of-untrusted-data-rce)
+- [Windows Service Privilege Escalation](https://cybernetgen.com/blog/Windows-Service-Privilege-Escalation)
+- [Auth Bypass with PHP Type Juggling](https://cybernetgen.com/blog/auth-bypass-with-php-type-juggling)
+- [Abusing SeLoadDriverPrivilege for Privilege Escalation](https://cybernetgen.com/blog/Abusing-SeLoadDriverPrivilege-for-Privilege-Escalation)
 <!-- BLOG-POST-LIST:END -->
 
 <h3 align="left">Connect with me:</h3>
