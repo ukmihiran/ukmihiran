@@ -2,8 +2,11 @@
 <p align="center"><em>Penetration Testing · Red Teaming · Vulnerability Management · Cloud Security</em></p>
 
 <p align="center">
+  <a href="https://udeshbandara.com">
+    <img alt="Website — udeshbandara.com" src="https://img.shields.io/badge/Website-udeshbandara.com-111827?style=flat&logo=google-chrome">
+  </a>
   <a href="https://cybernetgen.com">
-    <img alt="Website — cybernetgen.com" src="https://img.shields.io/badge/Website-cybernetgen.com-111827?style=flat&logo=google-chrome">
+    <img alt="Blog — cybernetgen.com" src="https://img.shields.io/badge/Blog-cybernetgen.com-0e75b6?style=flat&logo=hashnode&logoColor=white">
   </a>
   <a href="https://www.linkedin.com/in/udesh-bandara">
     <img alt="LinkedIn — udesh-bandara" src="https://img.shields.io/badge/LinkedIn-udesh--bandara-0A66C2?style=flat&logo=linkedin&logoColor=white">
@@ -27,7 +30,6 @@
 
 ## About
 
-<!-- Trophies at the very top of the About section -->
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
     <img
@@ -37,23 +39,24 @@
   </a>
 </p>
 
-I help teams find practical security weaknesses and fix them quickly. Over the past four years I’ve delivered focused penetration tests and red-team exercises across cloud and on-premise environments, then worked with engineers to turn results into clear, prioritised actions. I’m hands-on, methodical, and comfortable explaining risk to both technical and non-technical audiences. Lately I’ve been exploring how machine learning can support detection and triage without adding noise.
+👋 Hello! I’m **Udesh Bandara**, a passionate **Cybersecurity Consultant** and **Penetration Tester** who enjoys exploring how real-world attacks unfold — and helping organisations defend against them.  
 
-- 🌱 Learning: **Machine Learning**
-- 👨‍💻 Projects: <https://github.com/ukmihiran>
-- 📝 Writing: <https://cybernetgen.com>
-- 💬 Topics: **Cybersecurity, Python, C, PHP, Cloud, Offensive Security**
+💼 With over **four years of professional experience**, I’ve worked on everything from **red-team simulations** and **cloud penetration testing** to **vulnerability management** and **secure architecture reviews**. My approach combines technical depth with clear communication, translating complex findings into actionable recommendations that make a tangible difference.  
 
----
+🚀 Outside client engagements, I write detailed technical articles and proof-of-concepts at [**CybernetGen.com**](https://cybernetgen.com), where I share insights on offensive security techniques, red-team tradecraft, and exploitation research.  
 
-## Highlights
-- Delivered end-to-end penetration tests for cloud and hybrid workloads; produced remediation roadmaps adopted by engineering and leadership.
-- Built realistic attacker paths for red-team exercises (initial access → lateral movement → objective), improving detection and response playbooks.
-- Automated parts of reconnaissance and reporting in Python/Bash to reduce manual effort and turnaround time.
+🧠 I’m currently learning how **machine learning and automation** can help identify security anomalies more efficiently — without adding alert fatigue.  
+
+✨ A few quick links:
+- 🧩 **Projects:** [github.com/ukmihiran](https://github.com/ukmihiran)
+- 📝 **Blog:** [cybernetgen.com](https://cybernetgen.com)
+- 🧠 **Learning:** Machine Learning & Threat Detection
+- 💬 **Topics:** Cybersecurity, Python, C, PHP, Cloud, Offensive Security
 
 ---
 
 ## Skills
+
 **OffSec:** Penetration Testing, Red Teaming, API Security, Vulnerability Management  
 **Cloud & Infra:** AWS, Azure, Docker, Kubernetes, Linux  
 **Languages & Tools:** Python, C, PHP, Bash, Postman, SQL (MySQL/SQL Server)  
@@ -68,8 +71,7 @@ I help teams find practical security weaknesses and fix them quickly. Over the p
 ---
 
 ## GitHub at a glance
-<p>
-  <!-- Transparent theme renders well in light & dark modes -->
+<p align="center">
   <img alt="GitHub Stats" height="150" src="https://github-readme-stats.vercel.app/api?username=ukmihiran&show_icons=true&count_private=true&include_all_commits=true&hide_title=true&theme=transparent">
   <img alt="Top Languages" height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ukmihiran&layout=compact&hide_title=true&theme=transparent">
 </p>
@@ -77,10 +79,11 @@ I help teams find practical security weaknesses and fix them quickly. Over the p
 ---
 
 ## Connect
-- Website: https://cybernetgen.com  
-- LinkedIn: https://www.linkedin.com/in/udesh-bandara  
-- X (Twitter): https://x.com/ukmihiran  
-- Email: ukmihiran@gmail.com  
-- RSS: https://cybernetgen.com/api/rss
+- 🌐 Website: [udeshbandara.com](https://udeshbandara.com)  
+- 🧭 Blog: [cybernetgen.com](https://cybernetgen.com)  
+- 💼 LinkedIn: [linkedin.com/in/udesh-bandara](https://www.linkedin.com/in/udesh-bandara)  
+- 🐦 X (Twitter): [x.com/ukmihiran](https://x.com/ukmihiran)  
+- 📬 Email: [ukmihiran@gmail.com](mailto:ukmihiran@gmail.com)  
+- 🔔 RSS Feed: [cybernetgen.com/api/rss](https://cybernetgen.com/api/rss)
 
 ---
