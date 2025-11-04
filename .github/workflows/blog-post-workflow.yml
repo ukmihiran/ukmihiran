@@ -1,8 +1,8 @@
 name: Update Latest Blog Posts
 on:
   schedule:
-    - cron: "0 8 * * 1"     # Every Monday 08:00 UTC
-  workflow_dispatch:         # Manual trigger button
+    - cron: "0 8 * * 1"    # Every Monday 08:00 UTC
+  workflow_dispatch:        # Manual trigger button
 
 jobs:
   update:
@@ -10,34 +10,69 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install tools
+      - name: Set feed URL
         run: |
-          sudo apt-get update -y
-          sudo apt-get install -y curl libxml2-utils
+          echo "FEED_URL=https://cybernetgen.com/api/rss" >> $GITHUB_ENV
 
-      - name: Fetch RSS feed and build list
-        env:
-          FEED_URL: https://cybernetgen.com/api/rss
+      - name: Update README from RSS (robust parser)
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Parse feed and inject posts
         run: |
-          set -euo pipefail
-          TMP=$(mktemp)
-          curl -fsSL "$FEED_URL" -o "$TMP"
+          python - <<'PY'
+          import os, re, sys
+          import feedparser
 
-          POSTS=$(xmllint --xpath '(/rss/channel/item[position()<=5])' "$TMP" 2>/dev/null \
-            | xmllint --format - \
-            | awk '
-                /<title>/ {gsub(/.*<title>|<\/title>.*/,""); title=$0}
-                /<link>/  {gsub(/.*<link>|<\/link>.*/,""); link=$0;
-                            printf("- [%s](%s)\n", title, link)}')
+          # Try primary + a few sensible fallbacks
+          candidates = [
+              os.environ.get("FEED_URL", "https://cybernetgen.com/api/rss"),
+              "https://cybernetgen.com/blog/rss.xml",
+              "https://cybernetgen.com/rss.xml",
+              "https://cybernetgen.com/feed",
+              "https://cybernetgen.com/feed.xml",
+          ]
 
-          awk -v posts="$POSTS" '
-            BEGIN {inside=0}
-            /<!-- POSTS:START -->/ {print; print posts; inside=1; next}
-            /<!-- POSTS:END -->/   {inside=0}
-            !inside {print}
-          ' README.md > README.tmp
+          entries = []
+          chosen = None
+          for url in candidates:
+              d = feedparser.parse(url)
+              if d.entries:
+                  entries = d.entries[:5]
+                  chosen = url
+                  break
 
-          mv README.tmp README.md
+          if not entries:
+              print("::error::Could not parse any entries from known feed URLs.")
+              sys.exit(1)
+
+          # Build markdown list
+          lines = []
+          for e in entries:
+              title = (e.get("title") or "(untitled)").strip()
+              link = (e.get("link") or e.get("id") or "").strip()
+              if not link:
+                  continue
+              lines.append(f"- [{title}]({link})")
+          posts_md = "\n".join(lines)
+
+          # Replace between markers
+          path = "README.md"
+          src = open(path, "r", encoding="utf-8").read()
+          new = re.sub(
+              r"(<!-- POSTS:START -->)(.|\n)*?(<!-- POSTS:END -->)",
+              r"\\1\n" + posts_md + r"\n\\3",
+              src,
+              flags=re.S,
+          )
+          if new == src:
+              print("No changes to README.md")
+          else:
+              open(path, "w", encoding="utf-8").write(new)
+              print(f"Updated README.md using feed: {chosen}")
+          PY
+        shell: bash
 
       - name: Commit and push changes
         run: |
