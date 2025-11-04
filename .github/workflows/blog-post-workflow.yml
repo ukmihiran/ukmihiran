@@ -1,81 +1,124 @@
 name: Update Latest Blog Posts
 on:
   schedule:
-    - cron: "0 8 * * 1"    # Every Monday 08:00 UTC
-  workflow_dispatch:        # Manual trigger button
+    - cron: "0 8 * * 1"     # Every Monday 08:00 UTC
+  workflow_dispatch:         # Manual trigger button
+
+permissions:
+  contents: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set feed URL
-        run: |
-          echo "FEED_URL=https://cybernetgen.com/api/rss" >> $GITHUB_ENV
-
-      - name: Update README from RSS (robust parser)
-        uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          python-version: "3.x"
+          fetch-depth: 0
+          persist-credentials: true
 
-      - name: Parse feed and inject posts
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Fetch RSS feed and build list
+        env:
+          FEED_URL: https://cybernetgen.com/api/rss
         run: |
+          set -euo pipefail
           python - <<'PY'
-          import os, re, sys
-          import feedparser
+          import os, sys, urllib.request, xml.etree.ElementTree as ET, html
 
-          # Try primary + a few sensible fallbacks
-          candidates = [
-              os.environ.get("FEED_URL", "https://cybernetgen.com/api/rss"),
-              "https://cybernetgen.com/blog/rss.xml",
-              "https://cybernetgen.com/rss.xml",
-              "https://cybernetgen.com/feed",
-              "https://cybernetgen.com/feed.xml",
-          ]
-
-          entries = []
-          chosen = None
-          for url in candidates:
-              d = feedparser.parse(url)
-              if d.entries:
-                  entries = d.entries[:5]
-                  chosen = url
-                  break
-
-          if not entries:
-              print("::error::Could not parse any entries from known feed URLs.")
+          feed_url = os.environ.get('FEED_URL')
+          if not feed_url:
+              print('FEED_URL not set', file=sys.stderr)
               sys.exit(1)
 
-          # Build markdown list
-          lines = []
-          for e in entries:
-              title = (e.get("title") or "(untitled)").strip()
-              link = (e.get("link") or e.get("id") or "").strip()
-              if not link:
-                  continue
-              lines.append(f"- [{title}]({link})")
-          posts_md = "\n".join(lines)
+          try:
+              with urllib.request.urlopen(feed_url, timeout=20) as resp:
+                  data = resp.read()
+          except Exception as e:
+              print('Failed to fetch feed:', e, file=sys.stderr)
+              sys.exit(1)
 
-          # Replace between markers
-          path = "README.md"
-          src = open(path, "r", encoding="utf-8").read()
-          new = re.sub(
-              r"(<!-- POSTS:START -->)(.|\n)*?(<!-- POSTS:END -->)",
-              r"\\1\n" + posts_md + r"\n\\3",
-              src,
-              flags=re.S,
-          )
-          if new == src:
-              print("No changes to README.md")
+          try:
+              root = ET.fromstring(data)
+          except Exception as e:
+              print('Failed to parse XML:', e, file=sys.stderr)
+              sys.exit(1)
+
+          # Support RSS (<item>) and Atom (<entry>)
+          items = root.findall('.//item')
+          if not items:
+              items = root.findall('.//entry')
+
+          def find_text(elem, tagname):
+              for child in elem:
+                  if child.tag is None:
+                      continue
+                  if child.tag.endswith(tagname):
+                      return (child.text or '').strip()
+              return ''
+
+          lines = []
+          for item in items[:5]:
+              title = find_text(item, 'title') or ''
+              link = find_text(item, 'link') or ''
+              # atom-style link with href attribute
+              if not link:
+                  for child in item:
+                      if child.tag and child.tag.endswith('link'):
+                          href = child.attrib.get('href')
+                          if href:
+                              link = href
+                              break
+              title = html.unescape(title)
+              link = (link or '').strip()
+              if title and link:
+                  lines.append(f"- [{title}]({link})")
+              elif title:
+                  lines.append(f"- {title}")
+
+          posts = "\n".join(lines) + ("\n" if lines else "")
+
+          if not posts:
+              print('No posts extracted; leaving README unchanged', file=sys.stderr)
+              sys.exit(0)
+
+          readme_path = 'README.md'
+          try:
+              with open(readme_path, 'r', encoding='utf-8') as f:
+                  content = f.read()
+          except Exception as e:
+              print('Failed to read README.md:', e, file=sys.stderr)
+              sys.exit(1)
+
+          start_marker = '<!-- POSTS:START -->'
+          end_marker = '<!-- POSTS:END -->'
+          if start_marker in content and end_marker in content:
+              before, rest = content.split(start_marker, 1)
+              _, after = rest.split(end_marker, 1)
+              new = before + start_marker + "\n" + posts + end_marker + after
+              if new != content:
+                  with open(readme_path, 'w', encoding='utf-8') as f:
+                      f.write(new)
+                  print('README.md updated.')
+              else:
+                  print('No changes to README.md.')
           else:
-              open(path, "w", encoding="utf-8").write(new)
-              print(f"Updated README.md using feed: {chosen}")
+              print('Markers not found in README.md; skipping update', file=sys.stderr)
+              sys.exit(1)
           PY
-        shell: bash
 
       - name: Commit and push changes
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git diff --quiet || (git add README.md && git commit -m "chore: update latest blog posts" && git push)
+          git add README.md || true
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update latest blog posts"
+            git push
+          else
+            echo "No changes to commit."
+          fi
