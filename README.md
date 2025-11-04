@@ -1,44 +1,75 @@
-<h1 align="center">Hi 👋, I'm Udesh Bandara</h1>
-<h4 align="center">Hello! I'm a dedicated Cyber Security Professional with 4 years of experience specializing in Penetration Testing, Red Teaming, Vulnerability Management, and Cloud Security. My core expertise lies in proactively identifying vulnerabilities and mitigating security risks through realistic attack simulations and comprehensive penetration testing. My hands-on approach to both penetration testing and red teaming enables me to devise effective strategies to uncover hidden security flaws and strengthen an organization's overall security posture. I'm passionate about staying current with the latest trends and techniques in the industry, allowing me to tackle even the most complex cyber threats. Enjoying life as a Penetration Tester!</h4>
+h1 align="center">Udesh Bandara</h1>
+<p align="center"><em>Penetration Testing · Red Teaming · Vulnerability Management · Cloud Security</em></p>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=ukmihiran&label=Profile%20views&color=0e75b6&style=flat" alt="ukmihiran" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=ukmihiran" alt="ukmihiran" /></a> </p>
-
-<p align="left"> <a href="https://twitter.com/ukmihiran" target="blank"><img src="https://img.shields.io/twitter/follow/ukmihiran?logo=twitter&style=for-the-badge" alt="ukmihiran" /></a> </p>
-
-- 🌱 I’m currently learning **Machine Learning**
-
-- 👨‍💻 All of my projects are available at [https://github.com/ukmihiran/](https://github.com/ukmihiran)
-
-- 📝 I regularly write articles on [https://cybernetgen.com](https://cybernetgen.com)
-
-- 💬 Ask me about **Cybersecurity, Python, C, PHP, Machine Learning**
-
-- 📫 How to reach me **ukmihiran@gmail.com**
-
-### Blogs posts
-<!-- BLOG-POST-LIST:START -->
-- [Bypassing SSL Pinning in Android Applications Using Frida](https://cybernetgen.com/blog/SSL-Pinning-Bypass-with-Frida-for-Beginners)
-- [Apache Tomcat Server - Deserialization of Untrusted Data RCE](https://cybernetgen.com/blog/apache-tomcat-server-deserialization-of-untrusted-data-rce)
-- [Windows Service Privilege Escalation](https://cybernetgen.com/blog/Windows-Service-Privilege-Escalation)
-- [Auth Bypass with PHP Type Juggling](https://cybernetgen.com/blog/auth-bypass-with-php-type-juggling)
-- [Abusing SeLoadDriverPrivilege for Privilege Escalation](https://cybernetgen.com/blog/Abusing-SeLoadDriverPrivilege-for-Privilege-Escalation)
-<!-- BLOG-POST-LIST:END -->
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/ukmihiran" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="ukmihiran" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/udesh-bandara" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="udesh-bandara" height="30" width="40" /></a>
-<a href="/https://cybernetgen.com/feed/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg" alt="https://cybernetgen.com/feed/" height="30" width="40" /></a>
+<p align="center">
+  <a href="https://cybernetgen.com">
+    <img alt="Website — cybernetgen.com" src="https://img.shields.io/badge/Website-cybernetgen.com-111827?style=flat&logo=google-chrome">
+  </a>
+  <a href="https://www.linkedin.com/in/udesh-bandara">
+    <img alt="LinkedIn — udesh-bandara" src="https://img.shields.io/badge/LinkedIn-udesh--bandara-0A66C2?style=flat&logo=linkedin&logoColor=white">
+  </a>
+  <a href="https://x.com/ukmihiran">
+    <img alt="X — @ukmihiran" src="https://img.shields.io/badge/X-@ukmihiran-000000?style=flat&logo=x">
+  </a>
+  <a href="mailto:ukmihiran@gmail.com">
+    <img alt="Email — ukmihiran@gmail.com" src="https://img.shields.io/badge/Email-ukmihiran%40gmail.com-EA4335?style=flat&logo=gmail&logoColor=white">
+  </a>
+  <a href="https://cybernetgen.com/api/rss">
+    <img alt="RSS — Subscribe" src="https://img.shields.io/badge/RSS-Subscribe-FF7E00?style=flat&logo=rss&logoColor=white">
+  </a>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+<p align="center">
+  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=ukmihiran&label=Views&color=0e75b6&style=flat">
+</p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=ukmihiran&show_icons=true&locale=en&layout=compact" alt="ukmihiran" /></p>
+---
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=ukmihiran&show_icons=true&locale=en" alt="ukmihiran" /></p>
+### About
+I help engineering teams find and fix real-world vulnerabilities. Over the last 4 years I’ve led penetration tests and red-team exercises across cloud and on-prem environments, then turned findings into clear, actionable remediation. Currently exploring ML applications in security.
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=ukmihiran&" alt="ukmihiran" /></p>
+- 🌱 Learning: **Machine Learning**
+- 👨‍💻 Projects: <https://github.com/ukmihiran>
+- 📝 Writing: <https://cybernetgen.com>
+- 💬 Topics: **Cybersecurity, Python, C, PHP, Cloud, Offensive Security**
 
+---
+
+### Highlights
+- Delivered end-to-end penetration tests for cloud and hybrid workloads; produced remediation roadmaps adopted by engineering and leadership.
+- Built realistic attacker paths for red-team exercises (initial access → lateral movement → objective), improving detection and response playbooks.
+- Automated portions of recon and reporting in Python/Bash to reduce manual effort and turnaround time.
+
+---
+
+### Skills
+**OffSec:** Penetration Testing, Red Teaming, API Security, Vulnerability Management  
+**Cloud & Infra:** AWS, Azure, Docker, Kubernetes, Linux  
+**Languages & Tools:** Python, C, PHP, Bash, Postman, SQL (MySQL/SQL Server)  
+**Learning:** Machine Learning (pandas, scikit-learn, TensorFlow)
+
+---
+
+### Latest posts
+<!-- POSTS:START -->
+<!-- POSTS:END -->
+
+---
+
+### GitHub at a glance
+<p>
+  <!-- Transparent theme works in both light and dark modes -->
+  <img alt="GitHub Stats" height="150" src="https://github-readme-stats.vercel.app/api?username=ukmihiran&show_icons=true&count_private=true&include_all_commits=true&hide_title=true&theme=transparent">
+  <img alt="Top Languages" height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ukmihiran&layout=compact&hide_title=true&theme=transparent">
+</p>
+
+---
+
+### Connect
+- Website: https://cybernetgen.com  
+- LinkedIn: https://www.linkedin.com/in/udesh-bandara  
+- X (Twitter): https://x.com/ukmihiran  
+- Email: ukmihiran@gmail.com  
+- RSS: https://cybernetgen.com/api/rss
+
+---
