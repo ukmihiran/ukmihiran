@@ -64,6 +64,11 @@
 
 ## Latest posts
 <!-- POSTS:START -->
+- [Bypassing SSL Pinning in Android Applications Using Frida](https://cybernetgen.com/blog/SSL-Pinning-Bypass-with-Frida-for-Beginners)
+- [Apache Tomcat Server - Deserialization of Untrusted Data RCE](https://cybernetgen.com/blog/apache-tomcat-server-deserialization-of-untrusted-data-rce)
+- [Windows Service Privilege Escalation](https://cybernetgen.com/blog/Windows-Service-Privilege-Escalation)
+- [Auth Bypass with PHP Type Juggling](https://cybernetgen.com/blog/auth-bypass-with-php-type-juggling)
+- [Abusing SeLoadDriverPrivilege for Privilege Escalation](https://cybernetgen.com/blog/Abusing-SeLoadDriverPrivilege-for-Privilege-Escalation)
 <!-- POSTS:END -->
 
 ---
