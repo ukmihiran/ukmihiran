@@ -1,8 +1,8 @@
 name: Update Latest Blog Posts
 on:
   schedule:
-    - cron: "0 8 * * 1"   # Every Monday 08:00 UTC
-  workflow_dispatch:       # Manual run button
+    - cron: "0 8 * * 1"     # Every Monday 08:00 UTC
+  workflow_dispatch:         # Manual trigger button
 
 jobs:
   update:
@@ -12,10 +12,10 @@ jobs:
 
       - name: Install tools
         run: |
-          sudo apt-get update
-          sudo apt-get install -y libxml2-utils curl
+          sudo apt-get update -y
+          sudo apt-get install -y curl libxml2-utils
 
-      - name: Fetch RSS and build list
+      - name: Fetch RSS feed and build list
         env:
           FEED_URL: https://cybernetgen.com/api/rss
         run: |
@@ -23,26 +23,23 @@ jobs:
           TMP=$(mktemp)
           curl -fsSL "$FEED_URL" -o "$TMP"
 
-          # Extract top 5 <item> blocks; get <title> and <link>
           POSTS=$(xmllint --xpath '(/rss/channel/item[position()<=5])' "$TMP" 2>/dev/null \
             | xmllint --format - \
             | awk '
-                /<title>/ { gsub(/.*<title>|<\/title>.*/,""); title=$0 }
-                /<link>/  { gsub(/.*<link>|<\/link>.*/,""); link=$0; 
-                            printf("- [%s](%s)\n", title, link) }'
-          )
+                /<title>/ {gsub(/.*<title>|<\/title>.*/,""); title=$0}
+                /<link>/  {gsub(/.*<link>|<\/link>.*/,""); link=$0;
+                            printf("- [%s](%s)\n", title, link)}')
 
-          # Insert between markers
           awk -v posts="$POSTS" '
-            BEGIN {inblock=0}
-            /<!-- POSTS:START -->/ {print; print posts; inblock=1; next}
-            /<!-- POSTS:END -->/   {inblock=0}
-            !inblock {print}
+            BEGIN {inside=0}
+            /<!-- POSTS:START -->/ {print; print posts; inside=1; next}
+            /<!-- POSTS:END -->/   {inside=0}
+            !inside {print}
           ' README.md > README.tmp
 
           mv README.tmp README.md
 
-      - name: Commit changes (if any)
+      - name: Commit and push changes
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
