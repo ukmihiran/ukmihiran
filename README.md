@@ -1,4 +1,4 @@
-h1 align="center">Udesh Bandara</h1>
+<h1 align="center">Udesh Bandara</h1>
 <p align="center"><em>Penetration Testing · Red Teaming · Vulnerability Management · Cloud Security</em></p>
 
 <p align="center">
@@ -58,9 +58,19 @@ I help engineering teams find and fix real-world vulnerabilities. Over the last 
 
 ### GitHub at a glance
 <p>
-  <!-- Transparent theme works in both light and dark modes -->
+  <!-- Transparent theme looks great on light & dark -->
   <img alt="GitHub Stats" height="150" src="https://github-readme-stats.vercel.app/api?username=ukmihiran&show_icons=true&count_private=true&include_all_commits=true&hide_title=true&theme=transparent">
   <img alt="Top Languages" height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ukmihiran&layout=compact&hide_title=true&theme=transparent">
+</p>
+
+### Trophies
+<p align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img
+      alt="GitHub Profile Trophies"
+      src="https://github-profile-trophy.vercel.app/?username=ukmihiran&theme=onedark&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=6"
+    />
+  </a>
 </p>
 
 ---
