@@ -1,17 +1,49 @@
-name: Latest blog post workflow
+name: Update Latest Blog Posts
 on:
-  schedule: # Run workflow automatically
-    - cron: '0 * * * *' # Runs every hour, on the hour
-  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the GitHub Actions Workflow page directly
+  schedule:
+    - cron: "0 8 * * 1"   # Every Monday 08:00 UTC
+  workflow_dispatch:       # Manual run button
 
 jobs:
-  update-readme-with-blog:
-    name: Update this repo's README with latest blog posts
+  update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Pull in dev.to posts
-        uses: gautamkrishnar/blog-post-workflow@v1
-        with:
-          feed_list: "https://cybernetgen.com/api/rss"
+      - uses: actions/checkout@v4
+
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-utils curl
+
+      - name: Fetch RSS and build list
+        env:
+          FEED_URL: https://cybernetgen.com/api/rss
+        run: |
+          set -euo pipefail
+          TMP=$(mktemp)
+          curl -fsSL "$FEED_URL" -o "$TMP"
+
+          # Extract top 5 <item> blocks; get <title> and <link>
+          POSTS=$(xmllint --xpath '(/rss/channel/item[position()<=5])' "$TMP" 2>/dev/null \
+            | xmllint --format - \
+            | awk '
+                /<title>/ { gsub(/.*<title>|<\/title>.*/,""); title=$0 }
+                /<link>/  { gsub(/.*<link>|<\/link>.*/,""); link=$0; 
+                            printf("- [%s](%s)\n", title, link) }'
+          )
+
+          # Insert between markers
+          awk -v posts="$POSTS" '
+            BEGIN {inblock=0}
+            /<!-- POSTS:START -->/ {print; print posts; inblock=1; next}
+            /<!-- POSTS:END -->/   {inblock=0}
+            !inblock {print}
+          ' README.md > README.tmp
+
+          mv README.tmp README.md
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --quiet || (git add README.md && git commit -m "chore: update latest blog posts" && git push)
