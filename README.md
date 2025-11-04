@@ -25,45 +25,9 @@
 
 ---
 
-### About
-I help engineering teams find and fix real-world vulnerabilities. Over the last 4 years I’ve led penetration tests and red-team exercises across cloud and on-prem environments, then turned findings into clear, actionable remediation. Currently exploring ML applications in security.
+## About
 
-- 🌱 Learning: **Machine Learning**
-- 👨‍💻 Projects: <https://github.com/ukmihiran>
-- 📝 Writing: <https://cybernetgen.com>
-- 💬 Topics: **Cybersecurity, Python, C, PHP, Cloud, Offensive Security**
-
----
-
-### Highlights
-- Delivered end-to-end penetration tests for cloud and hybrid workloads; produced remediation roadmaps adopted by engineering and leadership.
-- Built realistic attacker paths for red-team exercises (initial access → lateral movement → objective), improving detection and response playbooks.
-- Automated portions of recon and reporting in Python/Bash to reduce manual effort and turnaround time.
-
----
-
-### Skills
-**OffSec:** Penetration Testing, Red Teaming, API Security, Vulnerability Management  
-**Cloud & Infra:** AWS, Azure, Docker, Kubernetes, Linux  
-**Languages & Tools:** Python, C, PHP, Bash, Postman, SQL (MySQL/SQL Server)  
-**Learning:** Machine Learning (pandas, scikit-learn, TensorFlow)
-
----
-
-### Latest posts
-<!-- POSTS:START -->
-<!-- POSTS:END -->
-
----
-
-### GitHub at a glance
-<p>
-  <!-- Transparent theme looks great on light & dark -->
-  <img alt="GitHub Stats" height="150" src="https://github-readme-stats.vercel.app/api?username=ukmihiran&show_icons=true&count_private=true&include_all_commits=true&hide_title=true&theme=transparent">
-  <img alt="Top Languages" height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ukmihiran&layout=compact&hide_title=true&theme=transparent">
-</p>
-
-### Trophies
+<!-- Trophies at the very top of the About section -->
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
     <img
@@ -73,9 +37,46 @@ I help engineering teams find and fix real-world vulnerabilities. Over the last 
   </a>
 </p>
 
+I help teams find practical security weaknesses and fix them quickly. Over the past four years I’ve delivered focused penetration tests and red-team exercises across cloud and on-premise environments, then worked with engineers to turn results into clear, prioritised actions. I’m hands-on, methodical, and comfortable explaining risk to both technical and non-technical audiences. Lately I’ve been exploring how machine learning can support detection and triage without adding noise.
+
+- 🌱 Learning: **Machine Learning**
+- 👨‍💻 Projects: <https://github.com/ukmihiran>
+- 📝 Writing: <https://cybernetgen.com>
+- 💬 Topics: **Cybersecurity, Python, C, PHP, Cloud, Offensive Security**
+
 ---
 
-### Connect
+## Highlights
+- Delivered end-to-end penetration tests for cloud and hybrid workloads; produced remediation roadmaps adopted by engineering and leadership.
+- Built realistic attacker paths for red-team exercises (initial access → lateral movement → objective), improving detection and response playbooks.
+- Automated parts of reconnaissance and reporting in Python/Bash to reduce manual effort and turnaround time.
+
+---
+
+## Skills
+**OffSec:** Penetration Testing, Red Teaming, API Security, Vulnerability Management  
+**Cloud & Infra:** AWS, Azure, Docker, Kubernetes, Linux  
+**Languages & Tools:** Python, C, PHP, Bash, Postman, SQL (MySQL/SQL Server)  
+**Learning:** Machine Learning (pandas, scikit-learn, TensorFlow)
+
+---
+
+## Latest posts
+<!-- POSTS:START -->
+<!-- POSTS:END -->
+
+---
+
+## GitHub at a glance
+<p>
+  <!-- Transparent theme renders well in light & dark modes -->
+  <img alt="GitHub Stats" height="150" src="https://github-readme-stats.vercel.app/api?username=ukmihiran&show_icons=true&count_private=true&include_all_commits=true&hide_title=true&theme=transparent">
+  <img alt="Top Languages" height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ukmihiran&layout=compact&hide_title=true&theme=transparent">
+</p>
+
+---
+
+## Connect
 - Website: https://cybernetgen.com  
 - LinkedIn: https://www.linkedin.com/in/udesh-bandara  
 - X (Twitter): https://x.com/ukmihiran  
