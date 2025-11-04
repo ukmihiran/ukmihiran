@@ -39,13 +39,11 @@
   </a>
 </p>
 
-👋 Hello! I’m **Udesh Bandara**, a passionate **Cybersecurity Consultant** and **Penetration Tester** who enjoys exploring how real-world attacks unfold — and helping organisations defend against them.  
+👋 Hello! I’m **Udesh Bandara**, a passionate **Cybersecurity Consultant** and **Penetration Tester** who enjoys exploring how real-world attacks unfold and helping organisations defend against them.  
 
 💼 With over **four years of professional experience**, I’ve worked on everything from **red-team simulations** and **cloud penetration testing** to **vulnerability management** and **secure architecture reviews**. My approach combines technical depth with clear communication, translating complex findings into actionable recommendations that make a tangible difference.  
 
-🚀 Outside client engagements, I write detailed technical articles and proof-of-concepts at [**CybernetGen.com**](https://cybernetgen.com), where I share insights on offensive security techniques, red-team tradecraft, and exploitation research.  
-
-🧠 I’m currently learning how **machine learning and automation** can help identify security anomalies more efficiently — without adding alert fatigue.  
+🚀 Outside client engagements, I write detailed technical articles and proof-of-concepts at [**CybernetGen.com**](https://cybernetgen.com), where I share insights on offensive security techniques, red-team tradecraft, and exploitation research.   
 
 ✨ A few quick links:
 - 🧩 **Projects:** [github.com/ukmihiran](https://github.com/ukmihiran)
